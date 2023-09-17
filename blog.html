@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube || Blog</title>
+    <link rel="shortcut icon" href="img/play-309041_640.png" type="image/x-icon">
+    <!-- Google font Inter link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind and Daisy cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-inter{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-inter max-w-[1440px] mx-auto">
+    
+    <!-- Navbar Start -->
+    <div class="w-full flex lg:flex-row md:flex-row flex-col justify-center items-center mt-4 px-16 ">
+        <div>
+            <a href="index.html"><img src="img/Logo.png" alt=""></a>
+        </div>
+    </div>
+    <div class="border-b border-b-[#17171733] w-11/12 mx-auto mt-6">
+    </div>
+
+    <div class="w-full h-40 bg-[#FF1F3D] mt-5 flex justify-center items-center">
+        <h2 class="text-5xl text-white font-bold">
+            Blog
+        </h2>
+    </div>
+
+    <!-- card section -->
+    <section class="mt-9 flex lg:flex-row md:flex-row md:flex-wrap flex-col justify-center items-center gap-3">
+        <!-- blog 1 -->
+        <div class="card w-96 h-[800px] bg-base-100 shadow-xl">
+            <figure class="p-4"><img src="img/gos81vmdo7fel8r8yi8l (1).jpg" alt="" class="rounded-lg"  /></figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Discuss the scope of var, let, and const
+                <div class="badge badge-secondary">NEW</div>
+              </h2>
+              <p>
+                In JavaScript, var, let, and const are used to declare variables, and they have different scopes and behaviors.
+                
+                var has function scope, which means it is visible throughout the function where it is declared, even if it's within a block. It can also be accessed before it's declared due to hoisting.
+                
+                let and const have block scope, making them only accessible within the block or statement they are defined in, like loops or conditional blocks. They are not hoisted, so trying to access them before declaration results in a ReferenceError.
+                
+                Variables declared with let can be reassigned with new values, making them mutable.</p>
+              <div class="card-actions justify-end">
+                <div class="btn badge badge-outline"><a href="https://www.geeksforgeeks.org/difference-between-var-let-and-const-keywords-in-javascript/" target="_blank">Read More</a></div> 
+              </div>
+            </div>
+          </div>
+        <!-- blog 2 -->
+        <div class="card w-96 h-[800px] bg-base-100 shadow-xl">
+            <figure class="p-4"><img src="img/null-and-undefined-in-javascript_thumbnail.jpg" alt="" class="rounded-lg"  /></figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Null and Undefined in JavaScript
+                <div class="badge badge-secondary">NEW</div>
+              </h2>
+              <p>In JavaScript, null is a deliberate absence of any value, often set by developers. It signifies an intentional empty state. In contrast, undefined indicates that a variable has been declared but not assigned any value yet, or a property doesn't exist in an object. Both are used to handle missing or empty data, but null is typically assigned by developers, while undefined is a default state.</p>
+              <div class="card-actions justify-end">
+                <div class="btn badge badge-outline"><a href="https://www.scaler.com/topics/javascript/null-and-undefined-in-javascript/" target="_blank">Read More</a></div> 
+              </div>
+            </div>
+          </div>
+        <!-- blog 3 -->
+        <div class="card w-96 h-[800px] bg-base-100 shadow-xl">
+            <figure class="p-4"><img src="img/rest-api.png" alt="" class="rounded-lg"  /></figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                What do you mean by REST API?
+                <div class="badge badge-secondary">NEW</div>
+              </h2>
+              <p>A REST API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. It uses standard HTTP methods (GET, POST, PUT, DELETE) to perform CRUD (Create, Read, Update, Delete) operations on resources, typically represented as URLs. REST APIs are stateless, meaning each request from a client to the server must contain all the necessary information, and they often use JSON for data exchange. They provide a scalable and widely adopted approach for web-based communication between different software systems.</p>
+              <div class="card-actions justify-end">
+                <div class="btn badge badge-outline"><a href="https://www.freecodecamp.org/news/what-is-rest-rest-api-definition-for-beginners/" target="_blank">Read More</a></div> 
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+        <!-- Footer -->
+        <footer class="bg-blue-500 text-white py-4 mt-8">
+            <div class="container mx-auto text-center">
+                &copy; 2023 PH Tube Blog
+            </div>
+        </footer>
+  
+</body>
+</html>
