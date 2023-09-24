@@ -1,12 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Product from "../Products/Product";
-// import { useState } from "react";
 
 const All = () => {
-    // const [products, setProducts] = useState([]);
     const videos = useLoaderData();
-//   setProducts(videos.data)
-  console.log(videos.data)
   const allVideo = videos.data;
 
     return (
