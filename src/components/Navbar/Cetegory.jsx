@@ -10,7 +10,7 @@ const Cetegory = ({categorys}) => {
              className={({ isActive, isPending }) =>
              isPending ? "pending text-lg btn" : isActive ? "active text-lg btn" : "text-lg btn"
            }
-            >{category}</NavLink>
+            to={`/category/${category_id}`}>{category}</NavLink>
         </div>
     );
 };

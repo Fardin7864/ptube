@@ -1,3 +1,4 @@
+import {AiTwotoneStar} from 'react-icons/ai'
 const Product = ({product}) => {
     return (
         <div className="card h-[340px] bg-base-100 shadow-xl gap-8">
@@ -16,8 +17,8 @@ const Product = ({product}) => {
             </div>
             <p className="text-[#171717] text-sm font-normal pl-12 flex">
                 {product.authors[0]?.profile_name}
-                <span className="ml-3">
-                {product?.authors[0]?.verified ? <img src="img/blutic.png" alt="Special" /> : ''}
+                <span className="ml-3 flex gap-2 justify-center items-center mt-1">
+                {product?.authors[0]?.verified ? <AiTwotoneStar className='text-blue-600 font-extrabold'></AiTwotoneStar> : ''}
                 </span>
             </p>
             <p className="text-[#171717] text-sm mt-2 font-normal">{product?.others?.views}</p>
